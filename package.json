@@ -1,0 +1,31 @@
+{
+    "name": "jsoncompile",
+    "version": "0.0.1",
+    "description": "Create HTML from a single tag",
+    "main": "snap.min.js",
+    "preferGlobal": "true",
+    "bin": {
+        "snap": "snap.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/benderTheCrime/snap.git"
+    },
+    "keywords": [
+        "html",
+        "snap",
+        "compile"
+    ],
+    "dependencies" : {
+        "handlebars": "2.0.0",
+        "open": "0.0.5"
+    },
+    "author": "Joe Groseclose",
+    "license": "MIT License",
+    "bugs": {
+        "url": "https://github.com/benderTheCrime/snap/issues"
+    },
+    "engines": {
+        "node": "*"
+    }
+}
