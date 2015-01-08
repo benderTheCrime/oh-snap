@@ -1,4 +1,0 @@
-- Gruntfile!!
-- Write CLI
-- Write runtime library
-- Write atom interpretter for .snaps
