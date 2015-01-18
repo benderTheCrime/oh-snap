@@ -1,11 +1,13 @@
 {
-    "name": "jsoncompile",
+    "name": "SNAP",
+    "author": "Joe Groseclose",
+    "license": "MIT License",
     "version": "0.0.1",
     "description": "Create HTML from a single tag",
     "main": "snap.min.js",
     "preferGlobal": "true",
     "bin": {
-        "snap": "snap.min.js"
+        "snap": "lib/snap.js"
     },
     "repository": {
         "type": "git",
@@ -20,8 +22,7 @@
         "handlebars": "2.0.0",
         "open": "0.0.5"
     },
-    "author": "Joe Groseclose",
-    "license": "MIT License",
+
     "bugs": {
         "url": "https://github.com/benderTheCrime/snap/issues"
     },
