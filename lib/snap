@@ -1,0 +1,46 @@
+(function() {
+    'use strict';
+
+    var p = process,
+        args = p.argv,
+        term = require('./js/misc/terminal'),
+        main = require('./js/index');
+
+    var VERSION = '0.0.1',
+        INTERPRETTER_TAGS = {
+            all: {},
+            text: {},
+            hyperlink: {},
+            container: {},
+            table: {}
+        },
+        snapArgs = {};
+
+    if (~args.indexOf('node')) {
+        args.splice(args.indexOf('node'), 1);
+    }
+
+    if (/-[-](ember|handlebars|t($|emplate))/i.test(args)) {
+        snapArgs.template = {
+            ember: /-[-]ember/i.test(args),
+            handlebars: /-[-]handlebars/i.test(args),
+            template: /-[-]t($|emplate)/i.test(args)
+        };
+        args.splice(args.indexOf(/-[-](ember|handlebars|t($|emplate))/i), 1);
+    }
+
+    if (/-{1,}h($|elp)/i.test(args)) {
+        term.help(VERSION);
+        p.exit(0);
+    }
+
+    if (/-[-]d($|ebug)/i.test(args)) {
+        term.out('ENTERING DEBUG MODE', 'green');
+        require(__dirname + '/../Gulpfile')(
+            main.bind(null, snapArgs. INTERPRETTER_TAGS)
+        );
+        args.splice(args.indexOf(/-[-]d($|ebug)/i), 1);
+    } else {
+        main(snapArgs, INTERPRETTER_TAGS);
+    }
+})();

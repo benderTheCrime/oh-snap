@@ -1,18 +1,10 @@
 WARNING: This project is currently under development
 
-Each key will be read with three properties:
-*Attributes: An Object containing html attribute key value pairs.
-*Children: An object with the nested children to be contained in this key (or HTML entity).
-*Content: The content of the HTML object (text/etc).
+One of the proposed specs for HTML6 introduces flexibility in tags based entirely on the attributes associated with the tag provided. This project intends to explore this proposed spec and provide functionality for creating html/template files from a single tag based on attributes, content, and parent location.
 
-The absence of any of these properties will be ignored. Any additional properties will be ignored.
+* No need to specify DOCTYPE, if you need it, we've got you covered
+* The same goes for content type
+* The same goes for link rel and script type
+* Hard Returns are not preserved
 
-## Usage
-
-This assumes NPM is installed gloabally on your machine:
-
-```bash
-npm install -g snap
-
-snap <FILE_NAME(S)>
-```
+As of this time, the library parses tags in the head of complete .snap documents (no templates yet).

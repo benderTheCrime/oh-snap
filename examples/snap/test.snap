@@ -1,7 +1,28 @@
-<!DOCTYPE html>
-<tag>
-    <tag></tag>
-    <tag>
-        <tag type='checkbox'></tag>
-    </tag>
-</tag>
+<_ class='blah'>
+    <_>
+        <_ name='description' />
+        <_>Groovy</_>
+        <_ href='blah' />
+        <_>
+            html {
+                height: 100%;
+            }
+            body {
+                height: 100%;
+            }
+        </_>
+        <_ src='blah' />
+
+        <!--  test comment -->
+        <_ type='text/javascript'>
+            window.obj = {
+                blah: 'blah'
+            };
+        </_>
+    </_>
+    <_>
+        <_ type='checkbox' checked></_>
+        <_>text</_>
+        <_ src='' />
+    </_>
+</_>

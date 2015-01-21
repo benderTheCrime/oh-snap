@@ -1,32 +1,37 @@
 {
-    "name": "SNAP",
-    "author": "Joe Groseclose",
-    "license": "MIT License",
-    "version": "0.0.1",
-    "description": "Create HTML from a single tag",
-    "main": "snap.min.js",
-    "preferGlobal": "true",
-    "bin": {
-        "snap": "lib/snap.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/benderTheCrime/snap.git"
-    },
-    "keywords": [
-        "html",
-        "snap",
-        "compile"
-    ],
-    "dependencies" : {
-        "handlebars": "2.0.0",
-        "open": "0.0.5"
-    },
-
-    "bugs": {
-        "url": "https://github.com/benderTheCrime/snap/issues"
-    },
-    "engines": {
-        "node": "*"
-    }
+  "name": "oh-snap",
+  "author": "Joe Groseclose",
+  "license": "MIT License",
+  "version": "0.0.1",
+  "description": "HTML Shorthand for idiots and lazy people (like yours truly)",
+  "main": "snap.js",
+  "preferGlobal": "true",
+  "bin": {
+    "snap": "lib/snap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benderTheCrime/snap.git"
+  },
+  "keywords": [
+    "html",
+    "snap",
+    "compile"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jsdoc": "^0.1.4",
+    "gulp-jshint": "^1.9.0",
+    "walk": "^2.3.9"
+  },
+  "bugs": {
+    "url": "https://github.com/benderTheCrime/snap/issues"
+  },
+  "engines": {
+    "node": "*"
+  }
 }
