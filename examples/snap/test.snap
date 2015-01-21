@@ -4,7 +4,7 @@
         <_>Groovy</_>
         <_ href='blah' />
         <_>
-            html {
+            a {
                 height: 100%;
             }
             body {
@@ -23,6 +23,6 @@
     <_>
         <_ type='checkbox' checked></_>
         <_>text</_>
-        <_ src='' />
+        <_ src='some.jpg' />
     </_>
 </_>

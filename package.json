@@ -22,10 +22,12 @@
     "chalk": "^0.5.1"
   },
   "devDependencies": {
+    "cssbeautify": "^0.3.1",
     "gulp": "^3.8.10",
     "gulp-jscs": "^1.4.0",
     "gulp-jsdoc": "^0.1.4",
     "gulp-jshint": "^1.9.0",
+    "js-beautify": "^1.5.4",
     "walk": "^2.3.9"
   },
   "bugs": {
