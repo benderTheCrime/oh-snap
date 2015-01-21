@@ -1,4 +1,4 @@
-WARNING: This project is currently under development
+#Oh Snap!
 
 One of the proposed specs for HTML6 introduces flexibility in tags based entirely on the attributes associated with the tag provided. This project intends to explore this proposed spec and provide functionality for creating html/template files from a single tag based on attributes, content, and parent location.
 
